@@ -1,0 +1,18 @@
+/* Jednoduchý, responzivní styl */
+:root{--bg:#f6f7fb;--card:#ffffff;--accent:#1a73e8;--muted:#666}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;line-height:1.45;background:var(--bg);color:#111;margin:0}
+.container{max-width:900px;margin:0 auto;padding:1rem}
+.hero{background:linear-gradient(90deg,#fff, #f9fbff);padding:2rem 0;border-bottom:1px solid #e6e9ef}
+.hero .container{display:flex;gap:1rem;align-items:center}
+.avatar img{width:96px;height:96px;border-radius:12px;display:block}
+.hero-text h1{margin:.1rem 0;font-size:1.6rem}
+.role{color:var(--muted);margin:0}
+.contact{margin:.5rem 0}
+.social a{margin-right:.6rem;color:var(--accent);text-decoration:none}
+main{padding:2rem 0}
+.projects{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.project{background:var(--card);padding:1rem;border-radius:8px;box-shadow:0 1px 2px rgba(16,24,40,.04)}
+.project h3{margin:0 0 .4rem 0}
+.site-footer{padding:1rem 0;border-top:1px solid #e6e9ef;background:transparent;color:var(--muted)}
+@media (max-width:600px){.hero .container{flex-direction:row;align-items:center}.hero-text h1{font-size:1.25rem}}
