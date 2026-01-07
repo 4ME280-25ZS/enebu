@@ -14,7 +14,9 @@ body{
 }
 .container{max-width:1100px;margin:0 auto;padding:2rem}
 /* HERO */
-.hero{padding:6rem 0 4rem;background:linear-gradient(180deg,rgba(255,77,109,0.04),transparent)}
+.hero{position:relative;padding:6rem 0 4rem;background:linear-gradient(180deg,rgba(255,77,109,0.04),transparent)}
+.skip-link{position:absolute;left:1rem;top:0.75rem;background:var(--surface);color:#fff;padding:.4rem .6rem;border-radius:8px;transform:translateY(-120%);transition:transform .18s ease;z-index:999;text-decoration:none}
+.skip-link:focus,.skip-link:focus-visible{transform:translateY(0);outline:none;box-shadow:0 8px 30px rgba(0,0,0,.18)}
 .hero .container{display:flex;align-items:flex-start;gap:2rem}
 .avatar img{width:120px;height:120px;border-radius:16px;display:block;flex-shrink:0}
 .hero-text{flex:1}
@@ -22,6 +24,8 @@ body{
 .hero .role{font-weight:600;color:var(--muted);letter-spacing:.02em;margin:0 0 .75rem}
 .hero .contact{color:var(--muted);margin:0 0 1rem}
 .hero .cta{display:inline-block;padding:.6rem 1rem;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+/* Focus visible */
+a:focus-visible, .cta:focus-visible, .project a:focus-visible{outline:3px solid rgba(255,77,109,.25);outline-offset:4px;border-radius:8px}
 /* Projects */
 .projects{list-style:none;padding:0;margin:2.5rem 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
 .project{background:linear-gradient(180deg,#fff,#fff);padding:0;border-radius:12px;overflow:hidden;box-shadow:0 6px 30px rgba(16,24,40,.06);transition:transform .18s ease,box-shadow .18s ease}
