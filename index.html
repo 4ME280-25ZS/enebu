@@ -5,24 +5,22 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="Osobní vizitka – Jméno Příjmení, kontaktní údaje, projekty" />
     <title>Ema Nebuzelská — Osobní vizitka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="hero">
       <div class="container">
         <div class="avatar" aria-hidden="true">
-          <!-- inline SVG avatar -->
           <img src="assets/avatar.svg" alt="Avatar" />
         </div>
         <div class="hero-text">
           <h1>Ema Nebuzelská</h1>
           <p class="role">Front‑end developer &amp; designer</p>
           <p class="contact">📧 <a href="mailto:ema@example.com">ema@example.com</a> · 📍 Praha</p>
-          <nav class="social">
-            <a href="#" aria-label="GitHub">GitHub</a>
-            <a href="#" aria-label="LinkedIn">LinkedIn</a>
-            <a href="#" aria-label="Twitter">Twitter</a>
-          </nav>
+          <p><a class="cta" href="#projects">Projekty</a></p>
         </div>
       </div>
     </header>
@@ -32,7 +30,7 @@
         <h2>O mně</h2>
         <p>
           Jsem fiktivní vývojářka, která tvoří přístupná a responzivní uživatelská rozhraní.
-          Ráda kombinuji design a kód, a učím se nové technologie.
+          Ráda kombinuji design a kód a učím se nové technologie.
         </p>
       </section>
 
@@ -40,16 +38,25 @@
         <h2>Projekty</h2>
         <ul class="projects">
           <li class="project">
-            <h3><a href="#">Projekt A</a></h3>
-            <p>SPA s responzivním UI a testy.</p>
+            <figure><img src="assets/project-1.svg" alt="Projekt A thumbnail"></figure>
+            <div class="meta">
+              <h3><a href="#">Projekt A</a></h3>
+              <p>SPA s responzivním UI a testy.</p>
+            </div>
           </li>
           <li class="project">
-            <h3><a href="#">Projekt B</a></h3>
-            <p>Jednoduchá knihovna komponent.</p>
+            <figure><img src="assets/project-2.svg" alt="Projekt B thumbnail"></figure>
+            <div class="meta">
+              <h3><a href="#">Projekt B</a></h3>
+              <p>Jednoduchá knihovna komponent.</p>
+            </div>
           </li>
           <li class="project">
-            <h3><a href="#">Projekt C</a></h3>
-            <p>Experimentální vizualizace dat.</p>
+            <figure><img src="assets/project-3.svg" alt="Projekt C thumbnail"></figure>
+            <div class="meta">
+              <h3><a href="#">Projekt C</a></h3>
+              <p>Experimentální vizualizace dat.</p>
+            </div>
           </li>
         </ul>
       </section>
