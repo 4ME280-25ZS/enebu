@@ -13,8 +13,9 @@ body{
   margin:0;color:var(--surface);background:var(--bg);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
 }
 .container{max-width:1160px;margin:0 auto;padding:2rem}
-/* HERO */
-.hero{position:relative;padding:3.5rem 0 1.5rem;background:linear-gradient(180deg,rgba(26,115,232,0.06),transparent)}
+/* remove default top padding for main to tighten spacing under hero */
+main#main.container{padding-top:0}
+.hero{position:relative;padding:1.25rem 0 0.25rem;background:linear-gradient(180deg,rgba(26,115,232,0.06),transparent)}
 .skip-link{position:absolute;left:1rem;top:0.75rem;background:var(--surface);color:#fff;padding:.4rem .6rem;border-radius:8px;transform:translateY(-120%);transition:transform .18s ease;z-index:999;text-decoration:none}
 .skip-link:focus,.skip-link:focus-visible{transform:translateY(0);outline:none;box-shadow:0 8px 30px rgba(0,0,0,.18)}
 .hero .container{display:flex;align-items:flex-start;gap:2.25rem}
