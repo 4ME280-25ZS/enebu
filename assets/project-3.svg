@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Projekt C">
   <defs>
     <linearGradient id="g3" x1="0" x2="1">
-      <stop offset="0" stop-color="#E6F0FF"/>
-      <stop offset="1" stop-color="#FFD3E2"/>
+      <stop offset="0" stop-color="#E8F4FF"/>
+      <stop offset="1" stop-color="#C7E2FF"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="800" fill="url(#g3)" rx="12"/>
-  <text x="40" y="120" font-family="Poppins, Arial" font-size="64" fill="#1a1a1a">Projekt C</text>
+  <text x="40" y="120" font-family="Sora, Arial" font-size="64" fill="#071124">Projekt C</text>
 </svg>

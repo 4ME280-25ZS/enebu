@@ -7,7 +7,7 @@
     <title>Ema Nebuzelská — Osobní vizitka</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -39,25 +39,31 @@
         <h2>Projekty</h2>
         <ul class="projects">
           <li class="project">
-            <figure><img src="assets/project-1.svg" alt="Projekt A thumbnail"></figure>
-            <div class="meta">
-              <h3><a href="#">Projekt A</a></h3>
-              <p>SPA s responzivním UI a testy.</p>
-            </div>
+            <a class="project-link" href="#" aria-labelledby="proj-a-title">
+              <figure><img src="assets/project-1.svg" alt="Projekt A thumbnail"></figure>
+              <div class="meta">
+                <h3 id="proj-a-title">Projekt A</h3>
+                <p>SPA s responzivním UI a testy.</p>
+              </div>
+            </a>
           </li>
           <li class="project">
-            <figure><img src="assets/project-2.svg" alt="Projekt B thumbnail"></figure>
-            <div class="meta">
-              <h3><a href="#">Projekt B</a></h3>
-              <p>Jednoduchá knihovna komponent.</p>
-            </div>
+            <a class="project-link" href="#" aria-labelledby="proj-b-title">
+              <figure><img src="assets/project-2.svg" alt="Projekt B thumbnail"></figure>
+              <div class="meta">
+                <h3 id="proj-b-title">Projekt B</h3>
+                <p>Jednoduchá knihovna komponent.</p>
+              </div>
+            </a>
           </li>
           <li class="project">
-            <figure><img src="assets/project-3.svg" alt="Projekt C thumbnail"></figure>
-            <div class="meta">
-              <h3><a href="#">Projekt C</a></h3>
-              <p>Experimentální vizualizace dat.</p>
-            </div>
+            <a class="project-link" href="#" aria-labelledby="proj-c-title">
+              <figure><img src="assets/project-3.svg" alt="Projekt C thumbnail"></figure>
+              <div class="meta">
+                <h3 id="proj-c-title">Projekt C</h3>
+                <p>Experimentální vizualizace dat.</p>
+              </div>
+            </a>
           </li>
         </ul>
       </section>
