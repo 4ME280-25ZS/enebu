@@ -37,7 +37,7 @@ a:focus-visible, .cta:focus-visible, .project a:focus-visible{outline:4px solid 
 .project h3{margin:.1rem 0 .5rem;font-size:1.15rem;font-weight:700}
 .project p{margin:0;color:var(--muted);font-size:1rem}
 #main > section{margin:2.5rem 0}
-#main > section:first-of-type{margin-top:0.5rem}
+#main > section:first-of-type{margin-top:0}
 /* Footer */
 .site-footer{padding:3rem 0 6rem;border-top:1px solid #f1f5f9;color:var(--muted);text-align:center}
 /* Responsive */
