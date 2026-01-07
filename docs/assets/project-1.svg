@@ -1,10 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Projekt A">
   <defs>
     <linearGradient id="g1" x1="0" x2="1">
-      <stop offset="0" stop-color="#E6F0FF"/>
-      <stop offset="1" stop-color="#CFE7FF"/>
+      <stop offset="0" stop-color="#cfe7ff"/>
+      <stop offset="0.5" stop-color="#9fe0ff"/>
+      <stop offset="1" stop-color="#bde7ff"/>
     </linearGradient>
+    <radialGradient id="r1" cx="30%" cy="25%" r="50%">
+      <stop offset="0" stop-color="#ffd6e0" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffd6e0" stop-opacity="0"/>
+    </radialGradient>
   </defs>
   <rect width="1200" height="800" fill="url(#g1)" rx="12"/>
-  <text x="40" y="120" font-family="Sora, Arial" font-size="64" fill="#071124">Projekt A</text>
+  <g fill="none">
+    <circle cx="980" cy="120" r="140" fill="url(#r1)" />
+    <ellipse cx="220" cy="560" rx="260" ry="120" fill="#e6f8ff" opacity="0.9" />
+  </g>
+  <text x="48" y="130" font-family="Sora, Arial" font-size="64" font-weight="700" fill="#071124">Projekt A</text>
 </svg>
