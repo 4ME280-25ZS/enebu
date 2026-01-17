@@ -1,14 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wishlist</title>
-  <script>
-    window.location.href = './wishlist/?id=test';
-  </script>
-</head>
-<body>
-  <p>Přesměrování na wishlist...</p>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Osobní vizitka – Jméno Příjmení, kontaktní údaje, projekty" />
+    <title>Ema Nebuzelská — Osobní vizitka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Přejít k obsahu</a>
+    <header class="hero">
+      <div class="container">
+        <div class="avatar" aria-hidden="true">
+          <img src="assets/avatar.svg" alt="Avatar" />
+        </div>
+        <div class="hero-text">
+          <h1>Ema Nebuzelská</h1>
+          <p class="role">Front‑end developer &amp; designer</p>
+          <p class="contact">📧 <a href="mailto:ema@example.com">ema@example.com</a> · 📍 Praha</p>
+          <p><a class="cta" href="#projects">Projekty</a></p>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="container">
+      <section id="about">
+        <h2>O mně</h2>
+        <p>
+          Jsem fiktivní vývojářka, která tvoří přístupná a responzivní uživatelská rozhraní.
+          Ráda kombinuji design a kód a učím se nové technologie.
+        </p>
+      </section>
+
+      <section id="projects">
+        <h2>Projekty</h2>
+        <ul class="projects">
+          <li class="project">
+            <a class="project-link" href="#" aria-labelledby="proj-a-title">
+              <figure><img src="assets/project-1.svg" alt="Projekt A thumbnail"></figure>
+              <div class="meta">
+                <h3 id="proj-a-title">Projekt A</h3>
+                <p>SPA s responzivním UI a testy.</p>
+              </div>
+            </a>
+          </li>
+          <li class="project">
+            <a class="project-link" href="#" aria-labelledby="proj-b-title">
+              <figure><img src="assets/project-2.svg" alt="Projekt B thumbnail"></figure>
+              <div class="meta">
+                <h3 id="proj-b-title">Projekt B</h3>
+                <p>Jednoduchá knihovna komponent.</p>
+              </div>
+            </a>
+          </li>
+          <li class="project">
+            <a class="project-link" href="#" aria-labelledby="proj-c-title">
+              <figure><img src="assets/project-3.svg" alt="Projekt C thumbnail"></figure>
+              <div class="meta">
+                <h3 id="proj-c-title">Projekt C</h3>
+                <p>Experimentální vizualizace dat.</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Kontakt</h2>
+        <p>Nejlepší je <a href="mailto:ema@example.com">napsat e‑mailem</a>. Rád/a se ozvu zpět.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© 2026 Ema Nebuzelská (fiktivní persona). Vytvořeno jako demonstrační web.</small>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
