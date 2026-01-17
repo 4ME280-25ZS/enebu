@@ -1,0 +1,19 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Allow everyone to read wishlists and items
+    match /wishlists/{wishlistId} {
+      allow read: if true;
+      allow create: if true;
+      allow update: if true; // allow setting wishlist-level metadata by anyone for simplicity
+
+      match /items/{itemId} {
+        allow read: if true;
+        allow create: if true;
+        // Allow update only if the item currently has no owner (can't overwrite an existing owner)
+        allow update: if resource.data.owner == null && request.resource.data.owner is string;
+        allow delete: if false;
+      }
+    }
+  }
+}
